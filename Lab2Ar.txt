@@ -1,0 +1,129 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/// estructura jugador
+typedef struct
+{
+    int dni;
+    char nombre_apellido[30];
+    int edad;
+    char equipo[30];
+
+} player;
+
+/// funcion de carga de jugadores
+int loadPlayers(player A[])
+{
+    int i=0;
+
+    A[i].dni=1234;
+    A[i].edad=23;
+    strcpy(A[i].nombre_apellido,"JuanFer Quintero");
+    strcpy(A[i].equipo,"River Plate");
+    i++;
+
+    A[i].dni=9876;
+    A[i].edad=33;
+    strcpy(A[i].nombre_apellido,"Nacho Scocco");
+    strcpy(A[i].equipo,"River Plate");
+    i++;
+
+    A[i].dni=2341;
+    A[i].edad=28;
+    strcpy(A[i].nombre_apellido,"Pity Martinez");
+    strcpy(A[i].equipo,"River Plate");
+    i++;
+
+    A[i].dni=9999;
+    A[i].edad=45;
+    strcpy(A[i].nombre_apellido,"Juan Roman Riquelme");
+    strcpy(A[i].equipo,"Boca Juniors");
+    i++;
+
+    A[i].dni=1213;
+    A[i].edad=50;
+    strcpy(A[i].nombre_apellido,"Guillermo Barros Schelotto");
+    strcpy(A[i].equipo,"Gimnasia de La Plata");
+    i++;
+
+    A[i].dni=1927;
+    A[i].edad=48;
+    strcpy(A[i].nombre_apellido,"Marcelo Gallardo");
+    strcpy(A[i].equipo,"River Plate");
+    i++;
+
+    A[i].dni=8362;
+    A[i].edad=28;
+    strcpy(A[i].nombre_apellido,"Franco Armani");
+    strcpy(A[i].equipo,"River Plate");
+    i++;
+
+    A[i].dni=2415;
+    A[i].edad=23;
+    strcpy(A[i].nombre_apellido,"Cristian Pavon");
+    strcpy(A[i].equipo,"Boca Juniors");
+    i++;
+
+    A[i].dni=9642;
+    A[i].edad=36;
+    strcpy(A[i].nombre_apellido,"Fernando Gago");
+    strcpy(A[i].equipo,"Boca Juniors");
+    i++;
+
+    A[i].dni=9642;
+    A[i].edad=46;
+    strcpy(A[i].nombre_apellido,"Carlitos Tevez");
+    strcpy(A[i].equipo,"Boca Juniors");
+    i++;
+
+    A[i].dni=2643;
+    A[i].edad=34;
+    strcpy(A[i].nombre_apellido,"Ariel Rojas");
+    strcpy(A[i].equipo,"San Lorenzo");
+    i++;
+
+    A[i].dni=2647;
+    A[i].edad=30;
+    strcpy(A[i].nombre_apellido,"Sebastian Torrico");
+    strcpy(A[i].equipo,"San Lorenzo");
+    i++;
+
+    A[i].dni=3426;
+    A[i].edad=26;
+    strcpy(A[i].nombre_apellido,"Maximiliano Meza");
+    strcpy(A[i].equipo,"Independiente");
+    i++;
+
+    A[i].dni=3827;
+    A[i].edad=36;
+    strcpy(A[i].nombre_apellido,"Martin Campania");
+    strcpy(A[i].equipo,"Independiente");
+    i++;
+
+    A[i].dni=1673;
+    A[i].edad=20;
+    strcpy(A[i].nombre_apellido,"Emmanuel Gigliotti");
+    strcpy(A[i].equipo,"Chongqing Lifan");
+    i++;
+
+    return i;
+}
+
+int main()
+{
+
+    /// ------------------------------------------ ///
+    /// declaracion y carga del arreglo de players
+
+    player Players[15];
+    int valid=loadPlayers(Players);
+
+    /// ------------------------------------------ ///
+
+
+
+
+
+    return 0;
+}
